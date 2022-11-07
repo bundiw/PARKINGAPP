@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_reserve">
+
+    <fragment
+        android:id="@+id/nav_reserve"
+        android:name="com.example.parkingapp.ui.Reserve.ReserveFragment"
+        android:label="@string/menu_reserve"
+        tools:layout="@layout/fragment_reserve" />
+
+    <fragment
+        android:id="@+id/nav_active"
+        android:name="com.example.parkingapp.ui.Active.ActiveFragment"
+        android:label="@string/menu_active"
+        tools:layout="@layout/fragment_active" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.parkingapp.ui.History.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.parkingapp.ui.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.parkingapp.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
